@@ -1,10 +1,21 @@
 @use "../utils" as u;
 
-.main {
-  padding: u.rem(20);
-  border: 2px solid red;
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: u.rem(20) 0;
+  justify-content: space-between;
 
-  h1 {
-    border: 2px solid green;
+  .logo {
+    width: u.rem(180);
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+
+    & > :not(:last-child) {
+      margin-right: u.rem(50);
+    }
   }
 }

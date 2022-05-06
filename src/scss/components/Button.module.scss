@@ -1,0 +1,6 @@
+@use "../utils" as u;
+
+.button {
+  padding: u.rem(16) u.rem(32);
+  border-radius: 8px;
+}
