@@ -1,0 +1,10 @@
+@use "../utils" as u;
+
+.main {
+  padding: u.rem(20);
+  border: 2px solid red;
+
+  h1 {
+    border: 2px solid green;
+  }
+}

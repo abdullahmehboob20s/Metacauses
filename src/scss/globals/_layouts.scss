@@ -1,0 +1,32 @@
+.container-wrapper {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+}
+.container-wrapper-2 {
+  max-width: 1400px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.w-fit-content {
+  width: fit-content;
+}
+.w-full {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.justify-end {
+  justify-content: flex-end;
+}
