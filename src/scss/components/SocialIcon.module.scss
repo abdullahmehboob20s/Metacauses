@@ -6,7 +6,19 @@
   justify-content: center;
   width: u.rem(117);
   height: u.rem(117);
+  font-size: u.rem(50);
 
   background: #ffffff;
   border-radius: 13px;
+
+  @include u.breakpoint(large) {
+    width: u.rem(70);
+    height: u.rem(70);
+    font-size: u.rem(30);
+  }
+  @include u.breakpoint(small) {
+    width: u.rem(50);
+    height: u.rem(50);
+    font-size: u.rem(26);
+  }
 }

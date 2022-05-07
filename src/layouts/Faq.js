@@ -1,9 +1,11 @@
 import Accordion from "components/Accordion";
 import Description from "components/Description";
+import useMediaQuery from "hooks/useMediaQuery";
 import React from "react";
 import styles from "scss/layout/Faq.module.scss";
 
 function Faq() {
+  const isBellow1024px = useMediaQuery("(max-width : 1024px)");
   return (
     <div className={`bg-light-blue`}>
       <div className="container-wrapper-2 py-100px">
@@ -21,7 +23,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -30,7 +32,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -41,7 +43,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -54,7 +56,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -62,7 +64,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -77,7 +79,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -86,7 +88,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -97,7 +99,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -110,7 +112,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -118,7 +120,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -133,7 +135,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -142,7 +144,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -153,7 +155,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -166,7 +168,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -174,7 +176,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -189,7 +191,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -198,7 +200,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -209,7 +211,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -222,7 +224,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -230,7 +232,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -245,7 +247,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -254,7 +256,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -265,7 +267,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -278,7 +280,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -286,7 +288,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -301,7 +303,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -310,7 +312,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -321,7 +323,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -334,7 +336,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -342,7 +344,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -357,7 +359,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -366,7 +368,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -377,7 +379,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -390,7 +392,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -398,7 +400,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -413,7 +415,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -422,7 +424,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -433,7 +435,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -446,7 +448,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -454,7 +456,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -469,7 +471,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -478,7 +480,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -489,7 +491,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -502,7 +504,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -510,7 +512,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -525,7 +527,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -534,7 +536,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -545,7 +547,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -558,7 +560,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -566,7 +568,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -581,7 +583,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -590,7 +592,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -601,7 +603,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -614,7 +616,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -622,7 +624,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -637,7 +639,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -646,7 +648,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -657,7 +659,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -670,7 +672,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -678,7 +680,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -693,7 +695,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -702,7 +704,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -713,7 +715,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -726,7 +728,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -734,7 +736,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -749,7 +751,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -758,7 +760,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -769,7 +771,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -782,7 +784,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -790,7 +792,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -805,7 +807,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -814,7 +816,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -825,7 +827,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -838,7 +840,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -846,7 +848,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state
@@ -861,7 +863,7 @@ function Faq() {
             {" "}
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses' mission is to provide aid to the most extreme
@@ -870,7 +872,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The causes that Metacauses tackles are selected by the community.
@@ -881,7 +883,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               The first charity that Metacauses will focus on is to provide
@@ -894,7 +896,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Future causes and grantees will be selected by the Metacauses
@@ -902,7 +904,7 @@ function Faq() {
             </Description>
             <Description
               lineHeight="lh-1_6"
-              fontSize="18px"
+              fontSize={isBellow1024px ? "fs-14px" : "fs-18px"}
               className="font-open-sans mb-15px"
             >
               Metacauses is a US-based nonprofit, incorporated in the US state

@@ -9,7 +9,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: inherit u.rem(24);
+  padding: u.rem(100) u.rem(24);
+  padding-bottom: 9rem !important;
 
   & > img {
     position: absolute;
@@ -29,6 +30,30 @@
 
     & > :not(:last-child) {
       margin-right: u.rem(30);
+    }
+  }
+
+  @include u.breakpoint(large) {
+    padding: u.rem(60) u.rem(18);
+    padding-bottom: 5rem !important;
+
+    main {
+      & > :not(:last-child) {
+        margin-right: u.rem(16);
+      }
+    }
+  }
+
+  @include u.breakpoint(small) {
+    main {
+      flex-wrap: wrap;
+      & > :not(:last-child) {
+        margin-right: u.rem(0);
+      }
+
+      & > :nth-child(n) {
+        margin: u.rem(10);
+      }
     }
   }
 }

@@ -5,18 +5,17 @@ import { FaFacebookF, FaTwitter, FaDiscord } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
 import SocialIcon from "components/SocialIcon";
+import useMediaQuery from "hooks/useMediaQuery";
 
 function Social() {
+  const isBellow1024px = useMediaQuery("(max-width : 1024px)");
   return (
     <div>
       <div className="container-wrapper-2">
-        <main
-          className={`${styles.section} py-100px`}
-          style={{ paddingBottom: "9rem" }}
-        >
+        <main className={`${styles.section}`}>
           <img src={SocialBg} alt="" />
 
-          <header className="mb-80px">
+          <header className={`${isBellow1024px ? "mb-40px" : "mb-80px"}`}>
             <h3 className="fs-18px white font-ubuntu weight-4 mb-10px">
               Metacauses
             </h3>
@@ -26,19 +25,19 @@ function Social() {
           </header>
 
           <main>
-            <SocialIcon className="pink fs-50px">
+            <SocialIcon className={`pink`}>
               <FaFacebookF />
             </SocialIcon>
-            <SocialIcon className="pink fs-50px">
+            <SocialIcon className={`pink`}>
               <FaTwitter />
             </SocialIcon>
-            <SocialIcon className="pink fs-50px">
+            <SocialIcon className={`pink`}>
               <FaDiscord />
             </SocialIcon>
-            <SocialIcon className="pink fs-52px">
+            <SocialIcon className={`pink `}>
               <IoIosMail />
             </SocialIcon>
-            <SocialIcon className="pink fs-48px">
+            <SocialIcon className={`pink `}>
               <RiInstagramFill />
             </SocialIcon>
           </main>

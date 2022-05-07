@@ -275,3 +275,72 @@ a {
 .hover-underline:hover {
   text-decoration: underline;
 }
+
+// MEDIA QUIERS ==============
+
+@include u.breakpoint(xLarge) {
+  .fs-20px {
+    font-size: u.rem(18);
+  }
+  .fs-72px {
+    font-size: u.rem(52);
+  }
+  .fs-48px {
+    font-size: u.rem(36);
+  }
+  .fs-32px {
+    font-size: u.rem(22);
+  }
+}
+@include u.breakpoint(large) {
+  .fs-30px {
+    font-size: u.rem(22);
+  }
+  .fs-36px {
+    font-size: u.rem(24);
+  }
+  .fs-24px {
+    font-size: u.rem(20);
+  }
+}
+@include u.breakpoint(medium) {
+  .fs-48px {
+    font-size: u.rem(32);
+  }
+
+  .fs-32px {
+    font-size: u.rem(20);
+  }
+
+  .fs-24px {
+    font-size: u.rem(18);
+  }
+  .fs-18px {
+    font-size: u.rem(16);
+  }
+}
+@include u.breakpoint(small) {
+  .fs-20px {
+    font-size: u.rem(16);
+  }
+  .fs-72px {
+    font-size: u.rem(38);
+  }
+  .fs-48px {
+    font-size: u.rem(26);
+  }
+
+  .fs-48px {
+    font-size: u.rem(28);
+  }
+
+  .fs-32px {
+    font-size: u.rem(18);
+  }
+  .fs-30px {
+    font-size: u.rem(18);
+  }
+  .fs-24px {
+    font-size: u.rem(16);
+  }
+}

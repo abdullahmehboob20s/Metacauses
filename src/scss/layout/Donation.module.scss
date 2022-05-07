@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 .wrapper {
   background-image: url(../../assets/images/donation-bg.svg);
   background-size: cover;
@@ -9,14 +11,24 @@
     align-items: center;
 
     aside {
-      max-width: 596.2px;
+      max-width: u.rem(596);
       width: 100%;
       flex: 1;
-      margin-right: 100px;
+      margin-right: u.rem(100);
     }
 
     article {
       flex: 1;
+    }
+
+    @include u.breakpoint(large) {
+      flex-direction: column;
+
+      aside {
+        max-width: u.rem(480);
+        margin-right: 0;
+        margin-bottom: u.rem(30);
+      }
     }
   }
 }

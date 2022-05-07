@@ -3,11 +3,20 @@
 .footer {
   .logo {
     width: 169px;
+
+    @include u.breakpoint(small) {
+      width: 120px;
+    }
   }
 
   main {
     $spacing-x: u.rem(20);
     $spacing-y: u.rem(12);
+
+    @include u.breakpoint(small) {
+      $spacing-x: u.rem(16);
+      $spacing-y: u.rem(10);
+    }
 
     display: flex;
     align-items: center;

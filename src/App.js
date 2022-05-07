@@ -21,7 +21,7 @@ function App() {
       <div className="mb-100px">
         <DonationTier />
       </div>
-      <div className="mb-200px">
+      <div className="mb-120px">
         <DonateWithoutNft />
       </div>
       <div className="mb-100px">

@@ -10,7 +10,7 @@ function Step({ title, step, setStep, ethPrice, img }) {
       }
     >
       <div className={`${styles.daimond} pointer`}></div>
-      <p className={`${styles.title} font-ubuntu fs-22px pointer`}>{title}</p>
+      <p className={`${styles.title} font-ubuntu  pointer`}>{title}</p>
     </div>
   );
 }

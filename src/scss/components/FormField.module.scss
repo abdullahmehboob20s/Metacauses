@@ -7,7 +7,14 @@
   input {
     background: rgba(236, 236, 236, 0.27);
     border: 1px solid #cccccc;
-    border-radius: 15px;
+    border-radius: u.rem(15);
     padding: u.rem(22) u.rem(80);
+  }
+
+  @include u.breakpoint(large) {
+    input {
+      padding: u.rem(16) u.rem(26);
+      border-radius: u.rem(6);
+    }
   }
 }

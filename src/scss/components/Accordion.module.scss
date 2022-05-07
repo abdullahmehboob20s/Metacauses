@@ -5,6 +5,11 @@
   $padding: u.rem(24) u.rem(82);
   $radius: u.rem(28);
 
+  @include u.breakpoint(large) {
+    $padding: u.rem(24) u.rem(30);
+    $radius: u.rem(14);
+  }
+
   button {
     width: 100%;
     display: flex;
@@ -23,11 +28,17 @@
     }
 
     span {
-      width: u.rem(20);
+      min-width: u.rem(20);
       height: u.rem(20);
       position: relative;
 
       $size: u.rem(3);
+
+      @include u.breakpoint(medium) {
+        min-width: u.rem(16);
+        height: u.rem(16);
+        $size: u.rem(2);
+      }
 
       &::before {
         content: "";
@@ -100,6 +111,19 @@
         width: 90%;
         border: u.rem(2) dashed #979797;
         margin: 0 auto;
+      }
+
+      @include u.breakpoint(large) {
+        height: u.rem(20);
+
+        .line {
+          border: u.rem(1) dashed #979797;
+        }
+      }
+      @include u.breakpoint(small) {
+        .line {
+          width: 80%;
+        }
       }
     }
 

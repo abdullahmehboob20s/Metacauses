@@ -1,0 +1,78 @@
+@use "../utils" as u;
+
+.wrapper {
+  background: url(../../assets/images/gift-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: u.rem(56) u.rem(50);
+  text-align: center;
+
+  .or {
+    $size: 2em;
+
+    position: absolute;
+    top: calc(-1 * $size / 2);
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: $size;
+    height: $size;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > :not(:last-child) {
+      margin-right: u.rem(70);
+    }
+
+    .formRow {
+      display: flex;
+      align-items: center;
+
+      & > :not(:last-child) {
+        margin-right: u.rem(20);
+      }
+
+      input {
+        background: #ffffff;
+        border: 1px solid #c4c4c4;
+        border-radius: 8px;
+        padding: u.rem(16);
+        max-width: 156px;
+        text-align: center;
+      }
+    }
+  }
+
+  @include u.breakpoint(medium) {
+    padding: u.rem(40) u.rem(30);
+
+    form {
+      flex-direction: column;
+
+      & > :not(:last-child) {
+        margin-right: u.rem(0);
+        margin-bottom: u.rem(20);
+      }
+
+      .formRow {
+        flex-direction: column;
+
+        & > :not(:last-child) {
+          margin-right: u.rem(0);
+          margin-bottom: u.rem(10);
+        }
+      }
+    }
+  }
+}

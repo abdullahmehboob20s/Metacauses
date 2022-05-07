@@ -13,7 +13,7 @@
 @function em($pixel) {
   // divide pixel by 16 to return em
   @if math.is-unitless($pixel) {
-    @return math.div($pixel, 16) + rem;
+    @return math.div($pixel, 16) + em;
   }
   // Throw an Error if the parameter has unit
   @else {

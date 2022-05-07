@@ -6,8 +6,23 @@
   padding: u.rem(20) 0;
   justify-content: space-between;
 
+  @include u.breakpoint(xLarge) {
+    padding: u.rem(12) 0;
+  }
+
+  @include u.breakpoint(small) {
+    padding: u.rem(8) 0;
+  }
+
   .logo {
     width: u.rem(180);
+
+    @include u.breakpoint(xLarge) {
+      width: u.rem(120);
+    }
+    @include u.breakpoint(small) {
+      width: u.rem(90);
+    }
   }
 
   .right {
@@ -16,6 +31,47 @@
 
     & > :not(:last-child) {
       margin-right: u.rem(50);
+    }
+
+    .closeIcon {
+      display: none;
+    }
+
+    @include u.breakpoint(large) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 100%;
+      background-color: white;
+      align-items: unset;
+      flex-direction: column;
+      padding: u.rem(38);
+      transition: all 0.3s ease;
+      transform: translateX(300px);
+      z-index: 120;
+
+      &.open {
+        transform: translateX(0px);
+      }
+
+      & > :not(:last-child) {
+        margin-bottom: u.rem(14);
+      }
+
+      .closeIcon {
+        display: block;
+        width: fit-content;
+        margin-left: -6px;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+
+    @include u.breakpoint(large) {
+      display: block;
     }
   }
 }
