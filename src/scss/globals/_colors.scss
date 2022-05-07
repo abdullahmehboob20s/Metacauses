@@ -1,10 +1,24 @@
 /* COLORS */
+
+$pink: #f193b1;
+$light-blue: #f5f6f8;
+
 .black {
   color: #000000;
 }
 .white {
   color: #fafcff;
 }
+
+.pink {
+  color: $pink;
+}
+
+// BACKGROUNDS
+
 .bg-pink {
-  background-color: #f193b1;
+  background-color: $pink;
+}
+.bg-light-blue {
+  background-color: $light-blue;
 }

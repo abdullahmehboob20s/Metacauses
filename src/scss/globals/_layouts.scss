@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 .container-wrapper {
   max-width: 1600px;
   width: 90%;
@@ -7,6 +9,10 @@
   max-width: 1400px;
   width: 70%;
   margin: 0 auto;
+
+  @include u.breakpoint(twoxLarge) {
+    width: 90%;
+  }
 }
 
 .block {

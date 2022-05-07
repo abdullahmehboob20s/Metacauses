@@ -1,0 +1,34 @@
+@use "../utils" as u;
+
+.section {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: inherit u.rem(24);
+
+  & > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > :not(:last-child) {
+      margin-right: u.rem(30);
+    }
+  }
+}

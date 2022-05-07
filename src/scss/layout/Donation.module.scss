@@ -1,0 +1,22 @@
+.wrapper {
+  background-image: url(../../assets/images/donation-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  background-position-x: center;
+
+  section {
+    display: flex;
+    align-items: center;
+
+    aside {
+      max-width: 596.2px;
+      width: 100%;
+      flex: 1;
+      margin-right: 100px;
+    }
+
+    article {
+      flex: 1;
+    }
+  }
+}

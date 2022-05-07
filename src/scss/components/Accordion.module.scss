@@ -1,0 +1,112 @@
+@use "../utils" as u;
+@use "../globals/colors" as colors;
+
+.accordion {
+  $padding: u.rem(24) u.rem(82);
+  $radius: u.rem(28);
+
+  button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: $radius;
+    padding: $padding;
+
+    & > :not(:last-child) {
+      margin-right: u.rem(20);
+    }
+
+    p {
+      transition: all 0.3s ease;
+    }
+
+    span {
+      width: u.rem(20);
+      height: u.rem(20);
+      position: relative;
+
+      $size: u.rem(3);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: $size;
+        background-color: colors.$pink;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: $size;
+        background-color: colors.$pink;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+      }
+
+      &.open::after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  main {
+    border-radius: $radius;
+    transition: all 0.3s ease;
+    height: 0;
+    overflow: hidden;
+
+    .divider {
+      height: u.rem(40);
+      background-color: white;
+      width: 95%;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      $curveRadius: u.rem(20);
+      $distance: calc(100% - u.rem(12));
+
+      &:after,
+      &:before {
+        content: "";
+        width: 40px;
+        height: 100%;
+        position: absolute;
+        background-color: colors.$light-blue;
+        top: 0;
+      }
+      &:after {
+        border-radius: 0 $curveRadius $curveRadius 0;
+        -webkit-border-radius: 0 $curveRadius $curveRadius 0;
+        right: $distance;
+      }
+      &:before {
+        border-radius: $curveRadius 0 0 $curveRadius;
+        -webkit-border-radius: $curveRadius 0 0 $curveRadius;
+        left: $distance;
+      }
+
+      .line {
+        width: 90%;
+        border: u.rem(2) dashed #979797;
+        margin: 0 auto;
+      }
+    }
+
+    .content {
+      padding: $padding;
+      background-color: white;
+      border-radius: $radius;
+    }
+  }
+}

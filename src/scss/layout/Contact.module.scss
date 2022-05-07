@@ -1,0 +1,28 @@
+@use "../utils" as u;
+
+.contact {
+  form {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: u.rem(30) u.rem(60);
+
+    & > div:nth-child(1),
+    & > div:nth-child(4),
+    & > div:last-child {
+      grid-column: 1/-1;
+    }
+
+    & > div:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & > :not(:last-child) {
+        margin-right: u.rem(20);
+      }
+    }
+  }
+}

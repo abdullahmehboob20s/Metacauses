@@ -1,0 +1,14 @@
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+  .left {
+    // flex: 1;
+    margin-right: 100px;
+  }
+
+  .right {
+    flex: 1;
+  }
+}

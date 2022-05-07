@@ -1,0 +1,21 @@
+@use "../utils" as u;
+
+.footer {
+  .logo {
+    width: 169px;
+  }
+
+  main {
+    $spacing-x: u.rem(20);
+    $spacing-y: u.rem(12);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > a {
+      margin: $spacing-y $spacing-x;
+    }
+  }
+}

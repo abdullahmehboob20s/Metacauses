@@ -1,0 +1,7 @@
+@use "../utils" as u;
+
+.faqs {
+  & > :not(:last-child) {
+    margin-bottom: u.rem(20);
+  }
+}

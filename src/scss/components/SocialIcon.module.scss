@@ -1,0 +1,12 @@
+@use "../utils" as u;
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: u.rem(117);
+  height: u.rem(117);
+
+  background: #ffffff;
+  border-radius: 13px;
+}
