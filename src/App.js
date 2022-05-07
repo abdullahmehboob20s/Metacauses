@@ -1,5 +1,7 @@
 import Contact from "layouts/Contact";
+import DonateWithoutNft from "layouts/DonateWithoutNft";
 import Donation from "layouts/Donation";
+import DonationTier from "layouts/DonationTier";
 import Faq from "layouts/Faq";
 import Footer from "layouts/Footer";
 import Hero from "layouts/Hero";
@@ -15,6 +17,12 @@ function App() {
       </div>
       <div className="mb-100px">
         <Donation />
+      </div>
+      <div className="mb-100px">
+        <DonationTier />
+      </div>
+      <div className="mb-200px">
+        <DonateWithoutNft />
       </div>
       <div className="mb-100px">
         <Social />

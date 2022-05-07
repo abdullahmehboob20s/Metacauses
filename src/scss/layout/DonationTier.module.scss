@@ -1,0 +1,85 @@
+@use "../utils" as u;
+
+.donation_tier {
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    main {
+      flex: 1;
+      margin-right: u.rem(100);
+    }
+    aside {
+      flex: 1;
+
+      .imgContainer {
+        background: url(../../assets/images/donation-tier-nft-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: u.rem(30) u.rem(32);
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1.1;
+        padding: u.rem(80) u.rem(50);
+
+        img {
+          height: 100%;
+          border: 4px solid #f193b1;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
+
+.steps {
+  max-width: 766.63px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #c6ccd5;
+    transform: translateY(-50%);
+  }
+}
+
+.donationQuantity {
+  display: flex;
+  background: url(../../assets/images/donationSelectorOutline.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: fit-content;
+  padding: u.rem(30) u.rem(32);
+
+  & > :not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  .line {
+    opacity: 0.25;
+    border: 2px solid #f193b1;
+  }
+
+  .counter {
+    display: flex;
+    align-items: center;
+
+    button {
+      display: flex;
+    }
+
+    & > :not(:last-child) {
+      margin-right: 0.8rem;
+    }
+  }
+}
