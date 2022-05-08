@@ -278,6 +278,30 @@ a {
 
 // MEDIA QUIERS ==============
 
+@include u.breakpoint(twoxLarge) {
+  .fs-20px {
+    font-size: u.rem(18);
+  }
+  .fs-72px {
+    font-size: u.rem(62);
+  }
+  .fs-48px {
+    font-size: u.rem(36);
+  }
+  .fs-32px {
+    font-size: u.rem(24);
+  }
+
+  .fs-30px {
+    font-size: u.rem(26);
+  }
+  .fs-36px {
+    font-size: u.rem(26);
+  }
+  .fs-24px {
+    font-size: u.rem(22);
+  }
+}
 @include u.breakpoint(xLarge) {
   .fs-20px {
     font-size: u.rem(18);

@@ -2,11 +2,13 @@ import React from "react";
 import styles from "scss/layout/Donation.module.scss";
 import Description from "components/Description";
 import donationCardImg from "assets/images/donationCardImg.png";
+import Stars from "components/Stars";
+import Spring from "components/Spring";
 
 function Donation() {
   return (
-    <div className={`${styles.wrapper}`}>
-      <div className="container-wrapper-2 py-100px">
+    <div className={`${styles.wrapper} relative`}>
+      <div className="container-wrapper-2 py-100px relative">
         <section>
           <aside>
             <img src={donationCardImg} className="w-full" alt="" />
@@ -44,6 +46,27 @@ function Donation() {
           </article>
         </section>
       </div>
+
+      <Stars zIndex="1" top="20%" left="5%" size="4rem" />
+      <Spring zIndex="1" top="unset" bottom="2%" left="15%" size="4rem" />
+      <Spring zIndex="1" top="10%" left="unset" right="2%" size="3rem" />
+      <Stars
+        zIndex="1"
+        top="unset"
+        bottom="30%"
+        left="unset"
+        right="2%"
+        size="3rem"
+        transform="rotate(310deg)"
+      />
+      <Spring
+        zIndex="1"
+        top="unset"
+        bottom="10%"
+        left="unset"
+        right="8%"
+        size="2rem"
+      />
     </div>
   );
 }

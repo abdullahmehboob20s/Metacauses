@@ -11,6 +11,8 @@ import nftImg3 from "assets/images/nftImg3.png";
 import nftImg4 from "assets/images/nftImg4.png";
 import nftImg5 from "assets/images/nftImg5.png";
 import nftImg6 from "assets/images/nftImg6.png";
+import Stars from "components/Stars";
+import Spring from "components/Spring";
 
 function DonationTier() {
   const [step, setStep] = useState({
@@ -25,7 +27,10 @@ function DonationTier() {
   };
 
   return (
-    <div className={`${styles.donation_tier}`}>
+    <div className={`${styles.donation_tier} relative`}>
+      <Stars top="15%" left="10%" size="4rem" transform="rotate(310deg)" />
+      <Spring top="25%" left="unset" right="8%" size="4rem" />
+
       <div className="container-wrapper-2">
         <header className="mb-140px">
           <h1 className="fs-48px black text-center weight-7 mb-80px font-ubuntu">

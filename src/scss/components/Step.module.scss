@@ -29,6 +29,10 @@
     color: #c6ccd5;
     user-select: none;
     font-size: u.rem(22);
+
+    @include u.breakpoint(twoxLarge) {
+      font-size: u.rem(20);
+    }
   }
 
   &.active .title {

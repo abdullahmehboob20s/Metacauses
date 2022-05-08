@@ -5,13 +5,16 @@ import Button from "components/Button";
 import { GrFormClose } from "react-icons/gr";
 import { IoMenu } from "react-icons/io5";
 import OutsideClickDetector from "hooks/OutsideClickDetector";
+import Spring from "components/Spring";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = OutsideClickDetector(() => setIsOpen(false));
 
   return (
-    <div className="container-wrapper">
+    <div className="container-wrapper relative">
+      <Spring size="3rem" left="30%" top="50%" transform="translate(0%,-50%)" />
+
       <div className={`${styles.navbar}`}>
         <img src={logo} className={`${styles.logo}`} alt="" />
 

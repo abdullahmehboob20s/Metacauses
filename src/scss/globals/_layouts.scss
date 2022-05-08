@@ -7,10 +7,13 @@
 }
 .container-wrapper-2 {
   max-width: 1400px;
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
 
   @include u.breakpoint(twoxLarge) {
+    width: 80%;
+  }
+  @include u.breakpoint(small) {
     width: 90%;
   }
 }

@@ -1,5 +1,7 @@
 import Accordion from "components/Accordion";
 import Description from "components/Description";
+import Spring from "components/Spring";
+import Stars from "components/Stars";
 import useMediaQuery from "hooks/useMediaQuery";
 import React from "react";
 import styles from "scss/layout/Faq.module.scss";
@@ -7,7 +9,33 @@ import styles from "scss/layout/Faq.module.scss";
 function Faq() {
   const isBellow1024px = useMediaQuery("(max-width : 1024px)");
   return (
-    <div className={`bg-light-blue`}>
+    <div className={`bg-light-blue relative`}>
+      <Stars zIndex="1" top="3%" left="3%" size="4rem" />
+      <Stars zIndex="1" top="unset" bottom="4%" left="3%" size="4rem" />
+      <Stars
+        zIndex="1"
+        top="unset"
+        bottom="3%"
+        left="unset"
+        right="2%"
+        size="4rem"
+      />
+      <Spring
+        zIndex="1"
+        top="50%"
+        left="unset"
+        right="2%"
+        size="3rem"
+        transform="translateY(-50%)"
+      />
+      <Spring
+        zIndex="1"
+        top="70%"
+        left="2%"
+        size="3rem"
+        transform="translateY(-50%)"
+      />
+
       <div className="container-wrapper-2 py-100px">
         <header className="mb-70px">
           <h3 className="fs-18px black text-center font-ubuntu weight-4 mb-10px">

@@ -12,6 +12,9 @@
     }
     aside {
       flex: 1;
+      @include u.breakpoint(twoxLarge) {
+        flex: 0.8;
+      }
 
       .imgContainer {
         background: url(../../assets/images/donation-tier-nft-bg.png);

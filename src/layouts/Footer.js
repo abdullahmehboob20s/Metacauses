@@ -1,10 +1,22 @@
 import React from "react";
 import styles from "scss/layout/Footer.module.scss";
 import logo from "assets/images/logo.svg";
+import Stars from "components/Stars";
+import Spring from "components/Spring";
 
 function Footer() {
   return (
-    <div className={`${styles.footer} bg-light-blue`}>
+    <div className={`${styles.footer} bg-light-blue relative`}>
+      <Stars zIndex="1" top="-6%" left="3%" size="4rem" />
+      <Spring
+        zIndex="1"
+        bottom="120%"
+        top="unset"
+        left="unset"
+        right="3%"
+        size="3rem"
+      />
+
       <div className="container-wrapper-2 py-50px">
         <header className="text-center mb-45px">
           <img src={logo} className={`${styles.logo}`} alt="" />

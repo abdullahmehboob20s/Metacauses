@@ -17,6 +17,10 @@
   .logo {
     width: u.rem(180);
 
+    @include u.breakpoint(twoxLarge) {
+      width: u.rem(140);
+    }
+
     @include u.breakpoint(xLarge) {
       width: u.rem(120);
     }

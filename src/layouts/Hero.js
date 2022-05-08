@@ -1,4 +1,5 @@
 import Description from "components/Description";
+import Stars from "components/Stars";
 import React from "react";
 import styles from "scss/layout/Hero.module.scss";
 
@@ -22,7 +23,15 @@ function Hero() {
           </p>
         </div>
 
-        <div className={`${styles.right}`}>
+        <div className={`${styles.right} relative`}>
+          <Stars
+            left="unset"
+            right="103%"
+            bottom="0"
+            top="unset"
+            transform="rotate(310deg)"
+          />
+
           <Description className="mb-20px">
             Metacauses' mission is to provide aid to the most extreme
             humanitarian causes of the day by raising capital through
