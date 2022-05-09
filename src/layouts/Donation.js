@@ -14,13 +14,13 @@ function Donation() {
             <img src={donationCardImg} className="w-full" alt="" />
           </aside>
           <article>
-            <div className="mb-45px">
-              <h1 className="fs-48px black font-ubuntu weight-7 mb-20px">
+            <div className="mb-30px">
+              <h1 className="fs-48px black font-ubuntu weight-7 mb-0px">
                 Our First Cause: Ukraine Aid
               </h1>
-              <h1 className="fs-32px black weight-7">
+              {/* <h1 className="fs-32px black weight-7">
                 Donations to Date: (connect wallet)
-              </h1>
+              </h1> */}
             </div>
             <h1 className="fs-32px black weight-7 pink font-ubuntu mb-25px">
               Donations accepted now. Please donate below.
@@ -34,11 +34,11 @@ function Donation() {
               organizations on the ground and in Ukraine and neighboring
               countries.
             </Description>
-            <Description className="mb-20px">
+            {/* <Description className="mb-20px">
               Civilians are suffering as Russian armies strike Ukraine. Many
               people rely on humanitarian help from local charities when they
               escape their homes and seek refuge.
-            </Description>
+            </Description> */}
             <Description className="mb-20px">
               Your Ethereum cryptocurrency donations will go directly to these
               organizations swiftly and efficiently.

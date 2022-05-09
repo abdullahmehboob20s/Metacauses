@@ -55,6 +55,18 @@
         }
       }
     }
+
+    @include u.breakpoint(small) {
+      .title {
+        display: none;
+      }
+
+      main {
+        margin-right: u.rem(0);
+        margin-top: u.rem(20);
+        text-align: center;
+      }
+    }
   }
 }
 

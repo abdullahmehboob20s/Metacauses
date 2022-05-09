@@ -16,8 +16,8 @@ import Spring from "components/Spring";
 
 function DonationTier() {
   const [step, setStep] = useState({
-    value: "Gold",
-    img: nftImg1,
+    value: "Bronze",
+    img: nftImg6,
     eth: 5,
   });
   const [counter, setCounter] = useState(1);
@@ -42,44 +42,46 @@ function DonationTier() {
             <Step
               step={step.value}
               setStep={setStep}
-              ethPrice={2}
+              ethPrice={0.25}
               title="Diamond"
-              img={nftImg1}
-            />
-            <Step
-              step={step.value}
-              setStep={setStep}
-              ethPrice={5}
-              title="Gold"
               img={nftImg2}
             />
             <Step
               step={step.value}
               setStep={setStep}
-              ethPrice={10}
+              ethPrice={0.15}
               title="Platinum"
               img={nftImg3}
             />
             <Step
               step={step.value}
               setStep={setStep}
-              ethPrice={15}
-              title="Silver"
-              img={nftImg4}
+              ethPrice={0.07}
+              title="Gold"
+              img={nftImg1}
             />
             <Step
               step={step.value}
               setStep={setStep}
-              ethPrice={20}
-              title="Bronze"
+              ethPrice={0.03}
+              title="Silver"
               img={nftImg5}
+            />
+            <Step
+              step={step.value}
+              setStep={setStep}
+              ethPrice={0.01}
+              title="Bronze"
+              img={nftImg6}
             />
           </div>
         </header>
 
         <section>
           <main>
-            <h1 className="fs-48px black weight-7 mb-35px font-ubuntu">
+            <h1
+              className={`${styles.title} fs-48px black weight-7 mb-35px font-ubuntu`}
+            >
               Donation Tier: <span className="uppercase">{step.value}</span>
             </h1>
             <p className="pink fs-32px weight-7 font-ubuntu mb-25px">

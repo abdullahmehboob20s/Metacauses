@@ -3,6 +3,7 @@ import styles from "scss/layout/Footer.module.scss";
 import logo from "assets/images/logo.svg";
 import Stars from "components/Stars";
 import Spring from "components/Spring";
+import urls from "assets/Data/urls";
 
 function Footer() {
   return (
@@ -24,49 +25,50 @@ function Footer() {
 
         <main className="mb-50px">
           <a
-            href="#"
+            href={urls.twitter}
+            target="_blank"
+            rel="noreferrer"
             className="fs-20px font-ubuntu weight-5 black opacity-0_9"
           >
             Twitter
           </a>
           <a
-            href="#"
+            href={urls.discord}
+            target="_blank"
+            rel="noreferrer"
             className="fs-20px font-ubuntu weight-5 black opacity-0_9"
           >
             Discord
           </a>
+
           <a
-            href="#"
-            className="fs-20px font-ubuntu weight-5 black opacity-0_9"
-          >
-            Website
-          </a>
-          <a
-            href="#"
-            className="fs-20px font-ubuntu weight-5 black opacity-0_9"
-          >
-            Contact
-          </a>
-          <a
-            href="#"
+            href={urls.termsAndConditions}
+            target="_blank"
+            rel="noreferrer"
             className="fs-20px font-ubuntu weight-5 black opacity-0_9"
           >
             Terms & Conditions
           </a>
           <a
-            href="#"
+            href={urls.privacyPolicy}
+            target="_blank"
+            rel="noreferrer"
             className="fs-20px font-ubuntu weight-5 black opacity-0_9"
           >
             Privacy
           </a>
           <a
-            href="#"
+            href={urls.smartContract}
+            target="_blank"
+            rel="noreferrer"
             className="fs-20px font-ubuntu weight-5 black opacity-0_9"
           >
             Smart Contract
           </a>
           <a
-            href="#"
+            href={urls.openSea}
+            target="_blank"
+            rel="noreferrer"
             className="fs-20px font-ubuntu weight-5 black opacity-0_9"
           >
             OpenSea

@@ -18,7 +18,7 @@ function App() {
       <div className="mb-100px">
         <Donation />
       </div>
-      <div className="mb-100px">
+      <div className="mb-100px" id="donate">
         <DonationTier />
       </div>
       <div className="mb-120px">
@@ -30,7 +30,7 @@ function App() {
       <div className="mb-100px">
         <Faq />
       </div>
-      <div className="mb-100px">
+      <div className="mb-100px" id="contact">
         <Contact />
       </div>
       <Footer />

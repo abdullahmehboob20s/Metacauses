@@ -1,9 +1,10 @@
 import useMediaQuery from "hooks/useMediaQuery";
-import React from "react";
+import React, { useState } from "react";
 import styles from "scss/components/Checkbox.module.scss";
 
-function Checkbox({ title, inputName }) {
+function Checkbox({ title, inputName, isChecked = false }) {
   const isBellow1536px = useMediaQuery("(max-width : 96em)");
+  const [checked, setChecked] = useState(isChecked);
 
   return (
     <div className={styles.checkbox}>
@@ -13,6 +14,8 @@ function Checkbox({ title, inputName }) {
           name={inputName}
           id={title}
           className="fs-16px"
+          checked={checked}
+          onChange={() => setChecked((val) => !val)}
         />
       </div>
       <label

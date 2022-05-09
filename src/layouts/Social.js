@@ -6,6 +6,7 @@ import { IoIosMail } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
 import SocialIcon from "components/SocialIcon";
 import useMediaQuery from "hooks/useMediaQuery";
+import urls from "assets/Data/urls";
 
 function Social() {
   const isBellow1024px = useMediaQuery("(max-width : 1024px)");
@@ -25,19 +26,23 @@ function Social() {
           </header>
 
           <main>
-            <SocialIcon className={`pink`}>
+            <SocialIcon target="_blank" link={urls.facebook} className={`pink`}>
               <FaFacebookF />
             </SocialIcon>
-            <SocialIcon className={`pink`}>
+            <SocialIcon target="_blank" link={urls.twitter} className={`pink`}>
               <FaTwitter />
             </SocialIcon>
-            <SocialIcon className={`pink`}>
+            <SocialIcon target="_blank" link={urls.discord} className={`pink`}>
               <FaDiscord />
             </SocialIcon>
-            <SocialIcon className={`pink `}>
+            <SocialIcon target="_blank" link={urls.mail} className={`pink `}>
               <IoIosMail />
             </SocialIcon>
-            <SocialIcon className={`pink `}>
+            <SocialIcon
+              target="_blank"
+              link={urls.instagram}
+              className={`pink `}
+            >
               <RiInstagramFill />
             </SocialIcon>
           </main>

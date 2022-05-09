@@ -25,7 +25,7 @@ function Contact() {
         />
         <FormField
           id="number"
-          label="Phone No (Optional) "
+          label="Phone Number (Optional) "
           placeholder="Enter Your Phone Number"
         />
         <FormField
@@ -34,7 +34,10 @@ function Contact() {
           placeholder="Enter Your Message Here"
         />
         <div>
-          <Checkbox title="I agree that this information will be used to contact me." />
+          <Checkbox
+            isChecked={true}
+            title="I agree that this information will be used to contact me."
+          />
           <Button title="Send Message" />
         </div>
       </form>

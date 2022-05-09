@@ -33,6 +33,10 @@
     display: flex;
     align-items: center;
 
+    .showInMobile {
+      display: none;
+    }
+
     & > :not(:last-child) {
       margin-right: u.rem(50);
     }
@@ -54,6 +58,10 @@
       transition: all 0.3s ease;
       transform: translateX(300px);
       z-index: 120;
+
+      .showInMobile {
+        display: block;
+      }
 
       &.open {
         transform: translateX(0px);

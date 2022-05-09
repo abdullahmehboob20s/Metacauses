@@ -6,6 +6,8 @@ import { GrFormClose } from "react-icons/gr";
 import { IoMenu } from "react-icons/io5";
 import OutsideClickDetector from "hooks/OutsideClickDetector";
 import Spring from "components/Spring";
+import urls from "assets/Data/urls";
+import { Link as ReactScroll } from "react-scroll";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,24 +37,46 @@ function Navbar() {
           >
             <GrFormClose size={30} />
           </button>
+          <ReactScroll
+            offset={-50}
+            to="donate"
+            className={`${styles.showInMobile} font-ubuntu fs-20px black weight-5 opacity-0_8 pointer`}
+            onClick={() => setIsOpen(false)}
+          >
+            Donate
+          </ReactScroll>
           <a
-            href="/"
+            href={urls.twitter}
+            target="_blank"
+            rel="noreferrer"
             className="font-ubuntu fs-20px black weight-5 opacity-0_8 pointer"
           >
             Twitter
           </a>
           <a
-            href="/"
+            href={urls.discord}
+            target="_blank"
+            rel="noreferrer"
             className="font-ubuntu fs-20px black weight-5 opacity-0_8 pointer"
           >
             Discord
           </a>
           <a
-            href="/"
+            href={urls.linkTree}
+            target="_blank"
+            rel="noreferrer"
             className="font-ubuntu fs-20px black weight-5 opacity-0_8 pointer"
           >
             Linktree
           </a>
+          <ReactScroll
+            offset={-50}
+            to="contact"
+            className={`${styles.showInMobile} font-ubuntu fs-20px black weight-5 opacity-0_8 pointer`}
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </ReactScroll>
 
           <Button title="Connect Wallet" />
         </div>
