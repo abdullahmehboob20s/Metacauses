@@ -18,7 +18,7 @@ function DonationTier() {
   const [step, setStep] = useState({
     value: "Bronze",
     img: nftImg6,
-    eth: 5,
+    eth: 0.01,
   });
   const [counter, setCounter] = useState(1);
 
